@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {list-style: none}
+li::before {content: "•";  color: red}
+
+</style>
+
+</head>
+<body>
+<h1>Question:How to set Bullet colors in UL/LI html lists via CSS without using any images or span tags?</h1>
+	
+
+<h2>An Unordered HTML List</h2>
+
+<ul>
+  <li>   Coffee</li>
+  <li>  Tea</li>
+  <li>  Milk</li>
+</ul>  
+
+<h2>An Ordered HTML List</h2>
+
+<ul>
+  <li> Coffee</li>
+  <li> Tea</li>
+  <li> Milk</li>
+</ul> 
+
+</body>
+</html>
+
+<!--OTHER WAYS-->
+
+<!--
+	<!DOCTYPE html>
+<html>
+<head>
+<style>
+li {color:red;}
+li span {color: #000;}
+</style>
+
+</head>
+<body>
+<li><span>Item 1</span></li>
+<li><span>Item 2</span></li>
+</body>
+</html>
+-->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ol {list-style: none; counter-reset: li}
+li::before {content: counter(li); color: red;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+li {counter-increment: li}
+
+</style>
+
+</head>
+<body>
+
+<h2>An Unordered HTML List</h2>
+
+<ol>
+  <li>   Coffee</li>
+  <li>  Tea</li>
+  <li>  Milk</li>
+</ol>  
+
+<h2>An Ordered HTML List</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+</body>
+</html>
+
+
+
+
+-->

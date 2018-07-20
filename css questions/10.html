@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.non-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+</style>
+
+</head>
+<body>
+<h1>Question:How to disable a link using only CSS?</h1>
+<a href="link.html" class="non-active">Link</a>
+</body>
+</html>
+
+
+
+<!--OTHER WAY USING BUTTONS-->
+<!--
+
+
+<html>
+<head>
+
+<style>
+
+@import "compass/css3";
+
+/* Martin Wolf CodePen Standard */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+
+body {
+  padding: 3em 2em;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* END Martin Wolf CodePen Standard */
+
+$btncolour: #307a16;
+
+body {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 12px;
+  color: #fff;
+  text-decoration: none;
+  background: $btncolour;
+  border-radius: 3px;
+  &:hover, &:focus {
+    background: lighten($btncolour, 5%);
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.btn-is-disabled {
+  pointer-events: none; /* Disables the button completely. Better than just cursor: default; */
+  @include opacity(0.7);
+}
+
+</style>
+</head><body>
+
+
+
+
+
+<a class="btn" href="http://theamazingweb.net" target="_blank">Button</a>
+<a class="btn btn-is-disabled" href="http://theamazingweb.net" target="_blank" tabindex="-1">Disabled Button</a>
+<a class="btn" href="http://theamazingweb.net" target="_blank">Button</a>
+
+</body>
+</html>
+
+-->
